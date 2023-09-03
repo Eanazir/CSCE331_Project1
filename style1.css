@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+
+@keyframes dropDown {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    40% {
+        opacity: 1;
+    }
+
+    60% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0px 0px;
+    margin: 0;
+    background-color: black;
+}
+
+/* Nav-Bar */
+.logo {
+    max-width: 3%;
+    padding: 10px 0px;
+    /* background-color: black; */
+}
+
+li,
+a,
+button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: #f3f2f2;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 5%;
+    background-color: black;
+    animation: dropDown 0.8s ease-in-out forwards, fadeIn 0.8s ease-in-out;
+    /* Animation to slide down and fadeIn */
+    opacity: 0;
+    /* Initial opacity */
+    transform: translateY(-100%);
+    /* Initial hidden state */
+}
+
+nav,
+.nav_links {
+    list-style: none;
+    position: relative;
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 0px 20px;
+    transition: filter 0.3s ease-in;
+}
+
+.nav_links:hover li {
+    /* for the Blur effect, when the item is not slected*/
+    filter: blur(2px);
+}
+
+.nav_links li:hover {
+    /* for the Blur effect, when the item is slected*/
+    filter: blur(0px);
+}
+
+.nav_links {
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #f3f2f2;
+    transition: width 0.2s ease-out;
+}
+
+.nav_links li a:hover::before {
+    /* will add an underline when the word is hovered over */
+    width: 100%;
+    left: 0;
+    right: auto;
+}
+
+button {
+    padding: 10px 25px;
+    background-color: #f3f2f2;
+    border: none;
+    color: black;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    /* will dim the contact button when hovered */
+    background-color: #f3f2f2D8;
+}
+
+/* Home-Intro */
+
+.Flag {
+    /* Add the blur effect */
+    background-image: url("/Resources/flag.png");
+    filter: blur(0px);
+    /* background-color: black; */
+
+    height: 950px;
+
+    /* Center and scale the image */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    animation: fadeIn 0.3s ease-in;
+}
+
+.Home-Section1 {
+    padding: 100px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+    font-size: 60px;
+
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/opacity/see-through */
+    color: #f3f2f2;
+    border: 3px solid #f3f2f2;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    padding: 30px;
+    text-align: center;
+}
+
+#typing-text {
+    display: inline-block;
+    background-color: transparent
+    /* Make the text and cursor inline */
+}
+
+#typing-text::after {
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 60px;
+    background-color: #f3f2f2;
+    display: inline-block;
+    margin-left: 2px;
+    /* Adjust the cursor position */
+    animation: blink 0.6s infinite alternate;
+    margin-left: 3px;
+}
+
+/* Home-About_me */
+.headshot {
+    width: 300px;
+    padding: 5px;
+    margin: 0 auto;
+    border-radius: 15px;
+    filter: drop-shadow(5px 5px 10px white)
+}
+
+.About_me {
+    padding: 20px 10px;
+    /* background-color: black; */
+    animation: fadeIn 0.3s ease-in;
+}
+
+.About_me h1 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+    font-size: 40px;
+    text-align: center;
+    color: #f3f2f2;
+}
+
+.About_me_text {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    display: grid;
+    grid-template-columns: 1fr;
+    color: #f3f2f2;
+    gap: 50px;
+    padding-left: 15px;
+    padding-bottom: 10px;
+}
+
+.technologies {
+    padding-left: 15px;
+    margin-right: 10px;
+    /* Add some space between items */
+    display: inline;
+    /* Ensure each item appears on a new line */
+}
+
+.technologies::before {
+    content: "• ";
+    color: #f3f2f2;
+    font-weight: bolder;
+}
+
+
+@media (min-width:800px) {
+    .About_me {
+        padding-right: 0px;
+    }
+
+    .About_me h1 {
+        margin-bottom: 30px;
+        gap: 10px
+    }
+
+    .About_me_text {
+        grid-template-columns: 1fr 3.5fr;
+        gap: 50px;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    .About_me_text p {
+        margin-top: 15px;
+    }
+
+    .headshot {
+        width: 100%;
+    }
+}
+
+.technologies a {
+    color: #006483;
+    font-size: 25px;
+    transition: 0.3s ease-in;
+}
+
+.tamu {
+    color: #700000;
+    font-size: 25px;
+    transition: 0.3s ease-in;
+}
+
+.About_me_text a:hover {
+    color: #004362;
+}
+
+/* Home-Footer */
+
+.footer {
+    display: grid;
+    padding: 20px 10px;
+    /* background-color: black; */
+    align-items: center;
+    animation: fadeIn 0.3s ease-in;
+}
+
+.socials {
+    margin-top: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (min-width:800px) {
+    .socials {
+        margin-left: 200px;
+        margin-right: 200px;
+        margin-top: 200px;
+    }
+}
+
+.socials span {
+    font-family: "Montserrat", sans-serif;
+    font-size: 40px;
+    font-weight: 100;
+    opacity: 20%;
+    color: #f3f2f2;
+}
+
+.footer i {
+    height: 100px;
+    opacity: 75%;
+    font-size: 40px;
+    color: #f3f2f2;
+    transition: 0.3s ease-in;
+}
+
+.fa-twitter:hover {
+    color: #1da1f2;
+}
+
+.fa-facebook:hover {
+    color: #3b5998;
+}
+
+.fa-instagram:hover {
+    color: #c32a74;
+}
+
+.fa-linkedin:hover{
+    color: #0072B1;
+}
+
+.fa-envelope:hover{
+    color:#BB001B;
+}
+
+.fa-phone:hover{
+    color:#34A853;
+}
+
+.footer div{
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    color: #f3f2f2;
+    opacity: 75%;
+    display: flex;
+    justify-content:space-around;
+}
