@@ -48,6 +48,7 @@
     padding: 0px 0px;
     margin: 0;
     background-color: black;
+    color: #f3f2f2
 }
 
 /* Nav-Bar */
@@ -57,12 +58,10 @@
     /* background-color: black; */
 }
 
-li,
-a,
-button {
+li, a, button {
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 20px;
     color: #f3f2f2;
     text-decoration: none;
 }
@@ -85,12 +84,16 @@ nav,
 .nav_links {
     list-style: none;
     position: relative;
+    transition: all 0.3s ease 0s;
+    transform: translateX(30px);
+    background-color: transparent;
 }
 
 .nav_links li {
     display: inline-block;
     padding: 0px 20px;
     transition: filter 0.3s ease-in;
+    background-color: transparent;
 }
 
 .nav_links:hover li {
@@ -103,15 +106,28 @@ nav,
     filter: blur(0px);
 }
 
-.nav_links {
-    transition: all 0.3s ease 0s;
+@media (max-width:1150px) {
+    .nav_links{
+        transform: translateX(0px);
+    }
+}
+@media (max-width:1065px) {
+    .nav_links li a, #cta{
+        font-size: 18px;
+    }
+    #cta{
+        padding: 10px 10px;
+    }
+}
+.nav_links li a{
+    background-color: transparent;
 }
 
 .nav_links li a::before {
     content: "";
     position: absolute;
     right: 0;
-    bottom: 0;
+    bottom: -3px;
     width: 0;
     height: 2px;
     background-color: #f3f2f2;
@@ -140,11 +156,12 @@ button:hover {
     background-color: #f3f2f2D8;
 }
 
+
 /* Home-Intro */
 
 .Flag {
     /* Add the blur effect */
-    background-image: url("/Resources/flag.png");
+    background-image: url("Resources/flag.png");
     filter: blur(0px);
     /* background-color: black; */
 
@@ -234,9 +251,8 @@ button:hover {
 .technologies {
     padding-left: 15px;
     margin-right: 10px;
-    /* Add some space between items */
     display: inline;
-    /* Ensure each item appears on a new line */
+
 }
 
 .technologies::before {
@@ -288,7 +304,7 @@ button:hover {
     color: #004362;
 }
 
-/* Home-Footer */
+/* Footer */
 
 .footer {
     display: grid;
@@ -361,4 +377,116 @@ button:hover {
     opacity: 75%;
     display: flex;
     justify-content:space-around;
+}
+
+/* Portfolio */
+.project-1, .project-2{
+    margin-top: 30px;
+    margin-bottom: 40px;
+    display: flex;
+    animation: fadeIn 0.7s ease-in;
+}
+.project-3{
+    display: grid;
+    grid-template-columns: 10fr 5fr;
+    animation: fadeIn 0.7s ease-in;
+}
+.project-1 div, .project-2 div, .project-3 .text{
+    padding: 50px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    background-color: #f3f2f2;
+    color: #000000;
+    border-radius: 50px;
+    border: 3px solid #f3f2f2;
+}
+.project-3 .text_pic{
+    display:grid;
+    width:fit-content;
+    height:fit-content;
+}
+
+.project-1 img{
+    width: 30%;
+    height: 30%;
+    padding: 1px;
+    margin-right: 20px;
+    border-radius: 15px;
+}
+
+.project-2 a img{
+    width:95%;
+    height: 100%;
+    padding: 1px;
+    margin: 0 auto;
+    border-radius: 15px;
+    margin-left: 20px;
+}
+.project-3 a img{
+    width: 95%;
+    padding: 1px;
+    margin-right: 20px;
+    border-radius: 15px;
+}
+
+.horiz{
+    height: 100%;
+    margin-top: 10px;
+    margin-left: 30px;
+    padding: 1px;
+    border-radius: 15px;
+}
+
+.project-2 a, u{
+    color: #006483;
+    background-color: transparent;
+    font-size: 20px;
+    transition: 0.3s ease-in;
+}
+
+.project-2 a:hover{
+    color: #004362;
+}
+
+@media (max-width:800px) {
+    .project-1{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .project-2{
+        display: flex;
+        flex-direction: column;
+    }
+    .project-3{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .project-2 a, .project-3 .text a, u{
+        font-size: 16px;
+    }
+    .project-1 div, .project-2 div, .project-3 .text {
+        font-size: 16px;
+    }
+    .project-1 img{
+        width: 70%;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        margin-right: 90px;
+        
+    }
+    .project-2 a img{
+        width: 80%;
+        margin-bottom: 5px;
+        margin-left: 58px;
+    }
+    .vert{
+        margin-left: 20px;
+    }
+}
+
+.portfolio{ /* for the footer */
+    margin-top: 80px;
 }

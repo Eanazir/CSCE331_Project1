@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style1.css">
+    <link rel="stylesheet" href=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="Script.JS"></script>
+    <title>Eyad Nazir | Portfolio </title>
+</head>
+
+<!-- Nav-Bar -->
+<header> 
+    <img class="logo" src="Resources/logo.svg" alt="Logo">
+    <nav>
+        <ul class="nav_links">
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="Portfolio.html">Portfolio</a></li>
+            <li><a href="Qualifications.html">Qualifications</a></li>
+            <li><a href="Services.html">Services</a></li>
+            <li><a href="AI-Generated.html">AI-Generated</a></li>
+        </ul>
+    </nav>
+    <button id="cta">Contact</button>
+</header>
+
+<section class="project-1">
+    <div>
+        This project is still an ongoing project that me and my friends have been trying to develop for some time.
+        The challenge we set ahead of ourselves was to build a functioning drone with minimal reliance on third-paty
+        materials. This meant that we would try to design and 3D print the chassis, customizing our own motor, 
+        integrating the electrical components, and of course write the code that drives it all. The team consisted 
+        to Mechanical, Electrical, and Computer Engineering students. I took the lead in managing a lot of the code-related 
+        aspects and set goals for myslef. From the Project's start, I was particularly intersted on diving deeper into 
+        machine learning, so i took the chance and set a goal to try to develop an algorith that would enable the drone 
+        to avoid hitting large immovable obstacles. I had to then think about how to electrically attach the Flight 
+        Controller, which is the brain of the drone, managing stabilization and flight dynamics. It usually includes 
+        an inertial measurement unit (IMU) to sense orientation and acceleration.
+    </div>
+    <img src="Resources/drone.jpg">
+</section>
+
+<section class="project-2">
+    <a href="Resources/NAE_gp5_Poster.pdf"><img src="Resources/NAE.png"></a>
+    <div>
+        During this project me and my teammates attempted to tackle one of the 
+        <a href="http://www.engineeringchallenges.org/challenges.aspx">14 Grand Challenges</a>
+        for Engineering. These challenges are outlined by the NAE (National Academy of Engineering).
+        The challenge we attempted to tackle was Engineering the Tools of Scientific Discovery", where in the 
+        century ahead scientists as well as engineers will need to further their understanding of the 
+        many unanswered questions of nature. We developed a program that aims to improve the success rate 
+        of launching and maintaining satellites by using data to identify points of failure in the satellites.
+        Furthermore, our program allows us to balance the cost to performance ratio in the process and to 
+        decrease the space debris by providing the optimal conditions in orbit.
+    </br>
+    </br>      
+        That was an excerpt of the background from the poster on the left.
+    </br>
+    </br>   
+        <u>Click on the poster to open as a PDF.</u>
+    </div>
+</section>
+
+<section class="project-3">
+    <div class="text_pic">
+        <div class="text">
+            In this simple project I used a Raspberry Pi as the microcontroller to develop and control the 
+            Logic behind building a minature traffic light along with a pedestrian signal. For this project, 
+            I did things in two different ways. First, we kept polling every 0.01 seconds to see if a button
+            was pressed. The second approach was a bit fancier - I used interrupts. This was done to demonstrate 
+            the difference between the two and in most cases using interrupts would be more accurate and less
+            computationally demanding. One of the constraints was to not register any clicks with in 20s of
+            the previous click. The LED did not have a yellow color so it was represented with Blue.
+        </br>
+        </br>   
+            <u>Click on one of the images to watch a video of the traffic lights working!</u>
+        </div>
+        <a href="https://youtube.com/shorts/gjDd8CJjdWs"><img class="horiz" src="Resources/traffic_lights_horiz.jpeg"></a>
+    </div>
+    <a href="https://youtube.com/shorts/gjDd8CJjdWs"><img class="vert" src="Resources/traffic_lights_vert.jpeg"></a>
+    
+</section>
+
+<!-- Footer -->
+<section class="footer">
+    <div class="socials portfolio">
+        <a href="https://twitter.com/Eyadakn1"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+        <span>/</span>
+        <a href="https://www.facebook.com/Eyadakn/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+        <span>/</span>
+        <a href="https://www.instagram.com/eyadakn/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+        <span>/</span>
+        <a href="https://www.linkedin.com/in/eyad-nazir/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+        <span>/</span>
+        <a href=mailto:eyadakn2017@gmail.com><i class="fa fa-envelope" aria-hidden="true"></i></a>
+        <span>/</span>
+        <a href="tel:8324502013"><i class="fa fa-phone" aria-hidden="true"></i></a>
+    </div>
+    <a name="bottom"></a> <!-- anchor link to be sent to when the contact button is pressed -->
+    <div class="bottom">
+        <span>Copyright © 2023 Eyad Nazir</span>
+        <span>Thank you for visting my website!</span>
+    </div>
+    
+</section>
+<body> 
+
+
+
+</body>
+</html>

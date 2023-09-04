@@ -5,8 +5,8 @@ document.addEventListener('DOMContentLoaded', function() { // asks the interpret
         "Born in USA, raised in EGYPT!"
     ];
 
-    const typingSpeed = 50; // Adjust typing speed (milliseconds per character)
-    const pauseDuration = 1000; // Adjust pause duration between lines (1 second here)
+    const typingSpeed = 45; // Adjust typing speed (milliseconds per character)
+    const pauseDuration = 750; // Adjust pause duration between lines (1 second here)
     let currentTextIndex = 0;
     let currentCharacterIndex = 0;
     let isTypingPaused = false;
