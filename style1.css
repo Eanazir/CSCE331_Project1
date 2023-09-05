@@ -58,13 +58,16 @@
     /* background-color: black; */
 }
 
-li, a, button {
+li,
+a,
+button {
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
     font-size: 20px;
     color: #f3f2f2;
     text-decoration: none;
 }
+
 
 
 header {
@@ -108,19 +111,24 @@ nav,
 }
 
 @media (max-width:1150px) {
-    .nav_links{
+    .nav_links {
         transform: translateX(0px);
     }
 }
+
 @media (max-width:1065px) {
-    .nav_links li a, #cta{
+
+    .nav_links li a,
+    #cta {
         font-size: 18px;
     }
-    #cta{
+
+    #cta {
         padding: 10px 10px;
     }
 }
-.nav_links li a{
+
+.nav_links li a {
     background-color: transparent;
 }
 
@@ -198,7 +206,7 @@ button:hover {
 #typing-text {
     display: inline-block;
     background-color: transparent
-    /* Make the text and cursor inline */
+        /* Make the text and cursor inline */
 }
 
 #typing-text::after {
@@ -338,6 +346,7 @@ button:hover {
     opacity: 20%;
     color: #f3f2f2;
 }
+
 .footer i {
     height: 100px;
     opacity: 75%;
@@ -358,43 +367,55 @@ button:hover {
     color: #c32a74;
 }
 
-.fa-linkedin:hover{
+.fa-linkedin:hover {
     color: #0072B1;
 }
 
-.fa-envelope:hover{
-    color:#BB001B;
+.fa-envelope:hover {
+    color: #BB001B;
 }
 
-.fa-phone:hover{
-    color:#34A853;
+.fa-phone:hover {
+    color: #34A853;
 }
 
-.footer div{
+.footer div {
     font-family: "Montserrat", sans-serif;
     font-size: 15px;
     color: #f3f2f2;
     opacity: 75%;
     display: flex;
-    justify-content:space-around;
+    justify-content: space-around;
 }
 
 /* Portfolio */
-.project-1, .project-2{
+.portfolio h1 {
+    background-color: #f3f2f2;
+    color: black;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
+
+.project-1,
+.project-2 {
     margin-top: 30px;
     margin-bottom: 40px;
     display: flex;
     animation: fadeIn 0.7s ease-in;
 }
-.project-3{
+
+.project-3 {
     display: grid;
     grid-template-columns: 10fr 5fr;
     animation: fadeIn 0.7s ease-in;
 }
-.project-1 div, .project-2 div, .project-3 .text{
+
+.project-1 div,
+.project-2 div,
+.project-3 .text {
     padding: 50px;
     font-family: "Montserrat", sans-serif;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 20px;
     margin-right: 20px;
     margin-left: 20px;
@@ -403,13 +424,14 @@ button:hover {
     border-radius: 50px;
     border: 3px solid #f3f2f2;
 }
-.project-3 .text_pic{
-    display:grid;
-    width:fit-content;
-    height:fit-content;
+
+.project-3 .text_pic {
+    display: grid;
+    width: fit-content;
+    height: fit-content;
 }
 
-.project-1 img{
+.project-1 img {
     width: 30%;
     height: 30%;
     padding: 1px;
@@ -417,92 +439,105 @@ button:hover {
     border-radius: 15px;
 }
 
-.project-2 a img{
-    width:95%;
+.project-2 a img {
+    width: 95%;
     height: 100%;
     padding: 1px;
     margin: 0 auto;
     border-radius: 15px;
     margin-left: 20px;
 }
-.project-3 a img{
+
+.project-3 a img {
     width: 95%;
     padding: 1px;
     margin-right: 20px;
     border-radius: 15px;
 }
 
-.horiz{
-    height: 100%;
+.horiz {
+    height: 93%;
     margin-top: 10px;
     margin-left: 30px;
     padding: 1px;
     border-radius: 15px;
 }
 
-.project-2 a, u{
+.project-2 a,
+u {
     color: #006483;
     background-color: transparent;
     font-size: 20px;
     transition: 0.3s ease-in;
 }
 
-.project-2 a:hover{
+.project-2 a:hover {
     color: #004362;
 }
 
 @media (max-width:800px) {
-    .project-1{
+    .project-1 {
         display: flex;
         flex-direction: column-reverse;
         justify-content: space-between;
         align-items: center;
     }
-    .project-2{
+
+    .project-2 {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
     }
-    .project-3{
+
+    .project-3 {
         display: flex;
         flex-direction: column-reverse;
         justify-content: space-between;
         align-items: center;
     }
-    .project-2 a, .project-3 .text a, u{
+
+    .project-2 a,
+    .project-3 .text a,
+    u {
         font-size: 16px;
     }
-    .project-1 div, .project-2 div, .project-3 .text {
+
+    .project-1 div,
+    .project-2 div,
+    .project-3 .text {
         font-size: 16px;
     }
-    .project-1 img{
+
+    .project-1 img {
         width: 70%;
         margin: 0 auto;
         margin-bottom: 10px;
     }
-    .project-2 a img{
+
+    .project-2 a img {
         width: 80%;
         margin-bottom: 5px;
     }
 
-    .vert{
+    .vert {
         height: 700px;
     }
 }
 
-.portfolio{ /* for the footer */
+.portfolio {
+    /* for the footer */
     margin-top: 80px;
 }
 
 /* Qualifications */
-.resume_wrapper{
+.resume_wrapper {
     display: flex;
     padding: 20px 20px;
     animation: fadeIn 0.3s ease-in;
 }
 
-.resume_text{
+.resume_text {
     padding: 50px;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
@@ -514,40 +549,52 @@ button:hover {
     border-radius: 50px;
     /* border: 3px solid #f3f2f2; */
 }
-.resume_text h1{
+
+.resume_text h1 {
     text-decoration: underline;
 }
 
-.resume a img{
-    width:700px;
+.resume a img {
+    width: 700px;
     border-radius: 10px;
-  
+
 }
 
-@media (max-width:800px){
-    .resume_wrapper{
+@media (max-width:800px) {
+    .resume_wrapper {
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
     }
-    .resume a img{
-        width:500px;
+
+    .resume a img {
+        width: 500px;
     }
-    .resume_text{
+
+    .resume_text {
         font-size: 16px;
     }
 }
 
 /* Service */
+.volunteering h1 {
+    background-color: #f3f2f2;
+    color: black;
+    font-size: 25px;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
 
-.vol_1, .vol_2{
-    display:flex;
+.vol_1,
+.vol_2 {
+    display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 50px;
 }
 
-.vol_1_text, .vol-2 text{
+.vol_1_text,
+.vol-2 text {
     padding: 50px;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
@@ -560,20 +607,136 @@ button:hover {
     border: 3px solid #f3f2f2;
 }
 
-.feed{
-    height:500px;
+.feed {
+    height: 500px;
     border-radius: 10px;
 }
-.amounts, .turtle{
+
+.amounts,
+.turtle {
     width: 30%;
     border-radius: 10px;
 }
-.volunteering a{
+
+.volunteering a {
     font-size: 20px;
-    color:#006483;
+    color: #006483;
     background-color: transparent;
     transition: 0.3s ease-in;
 }
-.volunteering a:hover{
+
+.volunteering a:hover {
     color: #004362;
+}
+
+@media (max-width:1300px) {
+    .amounts {
+        width: 0px;
+    }
+}
+
+@media (max-width:800px) {
+
+    .vol_1,
+    .vol_2 {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px
+    }
+
+    .vol_2 {
+        flex-direction: column-reverse;
+    }
+
+    .volunteering div,
+    .volunteering a {
+        font-size: 16px;
+    }
+
+    .volunteering h1 {
+        font-size: 20px;
+    }
+
+    .turtle {
+        width: 400px
+    }
+}
+
+.AI {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    animation: fadeIn 0.3s ease-in;
+}
+
+
+.prompt {
+    max-width: 1200px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    color: #f3f2f2;
+    padding: 20px;
+}
+
+.prompt h1 {
+    font-size: 40px;
+    text-align: center;
+    color: #f3f2f2;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    text-decoration: underline;
+}
+
+.container {
+    max-width: 1200px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    background-color: #f3f2f2;
+    color: #000000;
+    border-radius: 50px;
+    border: 3px solid #f3f2f2;
+    padding: 20px;
+}
+
+.container h2 {
+    font-size: 30px;
+    text-align: center;
+    color: #f3f2f2;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    background-color: transparent;
+    color: black;
+    text-decoration: underline;
+}
+
+.AI_footer {
+    margin-top: 100px;
+}
+
+@media(max-width:800px) {
+    .prompt {
+        font-size: 16px;
+    }
+
+    .prompt h1 {
+        font-size: 20px;
+    }
+
+    .container {
+        font-size: 16px;
+    }
+
+    .container h2 {
+        font-size: 20px;
+    }
 }

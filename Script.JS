@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() { // asks the interpreter to wait until all html is loaded
+document.addEventListener('DOMContentLoaded', function () { // asks the interpreter to wait until all html is loaded
     const textContainer = document.getElementById("typing-text");
     const text = [
         "Welcome! My name is Eyad Nazir!",
@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() { // asks the interpret
                     isTypingPaused = false;
                     currentCharacterIndex = 0;
                     currentTextIndex++;
-                    if(currentTextIndex < text.length){
+                    if (currentTextIndex < text.length) {
                         textContainer.innerHTML += "<br>"; // Add a line break
                     }
                     setTimeout(typeText, 0); // Start typing the next line
@@ -31,22 +31,19 @@ document.addEventListener('DOMContentLoaded', function() { // asks the interpret
             }
         }
     }
-    
+
     // Start the typing effect when the page loads
     window.onload = typeText;
 
-    
-    document.getElementById("cta").addEventListener("click", function() {
+
+    document.getElementById("cta").addEventListener("click", function () {
         // Find the anchor point element with the name "bottom"
         const bottomAnchor = document.querySelector('a[name="bottom"]');
-      
+
         // Scroll to the anchor point with a smooth transition
         if (bottomAnchor) {
-          bottomAnchor.scrollIntoView({ behavior: "smooth" });
+            bottomAnchor.scrollIntoView({ behavior: "smooth" });
         }
     });
 })
 
-
-  
-  
