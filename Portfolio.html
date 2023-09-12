@@ -14,7 +14,7 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     <!-- End favicon-->
-    <link rel="stylesheet" type="text/css" href="style1.css">
+    <link id="mainStyleSheet" rel="stylesheet" type="text/css" href="style1.css">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css?v=1234">
     <script type="text/javascript" src="Script.JS"></script>
@@ -23,7 +23,10 @@
 
 <!-- Nav-Bar -->
 <header>
-    <img class="logo" src="Resources/logo.svg" alt="Logo">
+    <button class="nav-burger" onclick="toggleMenu()"></button>
+    <button id="style_btn" onclick="toggleStyleSheet()"><img src="Resources/logo.svg" alt="Logo"></button>
+
+    <p id="style_txt"> &larr; Click to change style</p>
     <nav>
         <ul class="nav_links">
             <li><a href="index.html">Home</a></li>
@@ -56,12 +59,12 @@
     </section>
 
     <section class="project-2">
-        <a href="Resources/NAE_gp5_Poster.pdf"><img src="Resources/NAE.png"></a>
+        <a target="_blank" href="Resources/NAE_gp5_Poster.pdf"><img src="Resources/NAE.png"></a>
         <div>
             <h1> Satellite Tracking and Optimization </h1>
             </br>
             During this project me and my teammates attempted to tackle one of the
-            <a href="http://www.engineeringchallenges.org/challenges.aspx">14 Grand Challenges</a>
+            <a target="_blank" href="http://www.engineeringchallenges.org/challenges.aspx">14 Grand Challenges</a>
             for Engineering. These challenges are outlined by the NAE (National Academy of Engineering).
             The challenge we attempted to tackle was Engineering the Tools of Scientific Discovery", where in the
             century ahead scientists as well as engineers will need to further their understanding of the
@@ -94,27 +97,27 @@
                 </br>
                 <u>Click on one of the images to watch a video of the traffic lights working!</u>
             </div>
-            <a href="https://youtube.com/shorts/gjDd8CJjdWs"><img class="horiz"
+            <a target="_blank" href="https://youtube.com/shorts/gjDd8CJjdWs"><img class="horiz"
                     src="Resources/traffic_lights_horiz.jpeg"></a>
         </div>
-        <a href="https://youtube.com/shorts/gjDd8CJjdWs"><img class="vert" src="Resources/traffic_lights_vert.jpeg"></a>
+        <a target="_blank" href="https://youtube.com/shorts/gjDd8CJjdWs"><img class="vert" src="Resources/traffic_lights_vert.jpeg"></a>
 
     </section>
 </section>
 <!-- Footer -->
 <section class="footer">
     <div class="socials portfolio">
-        <a href="https://twitter.com/Eyadakn1"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+        <a target="_blank" href="https://twitter.com/Eyadakn1"><i class="fa fa-twitter" aria-hidden="true"></i></a>
         <span>/</span>
-        <a href="https://www.facebook.com/Eyadakn/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+        <a target="_blank" href="https://www.facebook.com/Eyadakn/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
         <span>/</span>
-        <a href="https://www.instagram.com/eyadakn/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+        <a target="_blank" href="https://www.instagram.com/eyadakn/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
         <span>/</span>
-        <a href="https://www.linkedin.com/in/eyad-nazir/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+        <a target="_blank" href="https://www.linkedin.com/in/eyad-nazir/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
         <span>/</span>
-        <a href=mailto:eyadakn2017@gmail.com><i class="fa fa-envelope" aria-hidden="true"></i></a>
+        <a target="_blank" href=mailto:eyadakn2017@gmail.com><i class="fa fa-envelope" aria-hidden="true"></i></a>
         <span>/</span>
-        <a href="tel:8324502013"><i class="fa fa-phone" aria-hidden="true"></i></a>
+        <a target="_blank" href="tel:8324502013"><i class="fa fa-phone" aria-hidden="true"></i></a>
     </div>
     <a name="bottom"></a> <!-- anchor link to be sent to when the contact button is pressed -->
     <div class="bottom">

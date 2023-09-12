@@ -52,11 +52,6 @@
 }
 
 /* Nav-Bar */
-.logo {
-    max-width: 3%;
-    padding: 10px 0px;
-    /* background-color: black; */
-}
 
 li,
 a,
@@ -67,8 +62,42 @@ button {
     color: #f3f2f2;
     text-decoration: none;
 }
+.nav-burger{
+    width: 0px;
+    height: 0px;
+    position: fixed;
+    border: none;
+    opacity: 0%;
+}
 
+#style_btn{
+    /* color */
+    border: none;
+    cursor: pointer;
+    min-width: 3%;
+    appearance: none;
+    background-color: inherit;
+    padding: 10px 0px;
+}
 
+#style_txt{
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    position: fixed;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    opacity: 0%;
+    display: flex;
+    transition: transform 0.5s ease-in-out; 
+    transition: opacity 0.5s ease-in-out;
+}
+
+@media (max-width:1460px){
+    #style_txt{
+        transform: translateX(-50px)
+    }
+}
 
 header {
     display: flex;
@@ -116,7 +145,7 @@ nav,
     }
 }
 
-@media (max-width:1065px) {
+@media c {
 
     .nav_links li a,
     #cta {
@@ -150,7 +179,7 @@ nav,
     right: auto;
 }
 
-button {
+#cta {
     padding: 10px 25px;
     background-color: #f3f2f2;
     border: none;
@@ -160,7 +189,7 @@ button {
     transition: all 0.3s ease 0s;
 }
 
-button:hover {
+#cta:hover {
     /* will dim the contact button when hovered */
     background-color: #f3f2f2D8;
 }
